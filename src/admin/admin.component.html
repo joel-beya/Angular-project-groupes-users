@@ -1,0 +1,19 @@
+
+<form>
+  <div class="container">
+    <div class="brand-logo"></div>
+    <div class="brand-title">ADMIN</div>
+    <div class="inputs">
+      <label>Nombre de groupe</label>
+      <input type="text" [(ngModel)]="nbGroupes" name="nbGroupes" placeholder="Entrez un nombre" />
+      <label>Nombre d'utilisateurs</label>
+      <input type="text" [(ngModel)]="nbUsers" name="nbUsers" placeholder="Entrez un nombre" />
+      <label>Configuration</label>
+      <input type="text" [(ngModel)]="config" name="config" placeholder="Entrez une configuration" />
+
+      <button type="submit" (click)="onSubmit()">SUBMIT</button>
+    </div>
+  </div>
+
+</form>
+
