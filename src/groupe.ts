@@ -1,4 +1,6 @@
 export interface Groupe {
     id_groupe: string;
-    id_utilisateur : string;
+    nbr_user : number;
+    liste_user: string[];
+
 }

@@ -1,4 +1,7 @@
+
 import { Component, Input, OnInit } from '@angular/core';
+import { Groupe } from 'src/groupe';
+
 
 @Component({
   selector: 'app-admin',
@@ -10,6 +13,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class AdminComponent implements OnInit {
   id: string = "admin";
   mdp: string = "admin";
+  //Liste de groupes
+  groupes: Groupe[] = [];
 
   //Recevoir en entrée le nombre d'utilisateurs
   nbUsers: string = "";
@@ -64,11 +69,15 @@ export class AdminComponent implements OnInit {
     console.log("Nombre de groupes: " + this.nbGroupes);
     console.log("Configuration: " + this.config);
   }
-  //Fonction pour créer une liste de groupe d'utilisateurs en fonction du nombre d'utilisateurs, du nombre de groupes et de la configuration
+
+
+  //Fonction prommesse de créer une liste de groupe d'utilisateurs voir sujet du projet partie admnistrateur
   creerGroupes() {
   }
-  //Créer un composant utilisateur
-  //id_utilisateur: string;
-  //Mot de passe: string;
+
+
+
+
+
 
 }
