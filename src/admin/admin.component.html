@@ -11,9 +11,11 @@
       <label>Configuration</label>
       <input type="text" [(ngModel)]="config" name="config" placeholder="Entrez une configuration" />
 
-      <button type="submit" (click)="onSubmit()">SUBMIT</button>
+      <button type="submit" (click)="creerGroupe()">SUBMIT</button>
     </div>
   </div>
+ 
+  <P>{{groupes|json}}</P>
 
 </form>
 
