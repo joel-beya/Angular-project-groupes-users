@@ -1,4 +1,16 @@
-<p>
-  Composant user
-  {{groupes|json}}
-</p>
+
+<div *ngFor="let groupe of groupes; index as i">
+  <h2>Groupe {{groupe.id_groupe}}</h2>
+  <p><i>Il ne reste que {{restePlace(groupe.id_groupe)}} place(s) </i></p>
+    <table>
+      <tr *ngFor="let user of groupe.liste_user; index as j">
+        <td>
+          {{user.nom}}
+        </td>
+      </tr>
+      <button (click)="rejoindreGroupe(groupe.id_groupe)">Join</button>
+      <button (click)="quitterGroupe(groupe.id_groupe)">Quitter</button>
+
+    </table>
+
+</div>
